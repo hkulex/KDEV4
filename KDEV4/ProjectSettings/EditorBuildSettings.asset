@@ -1,0 +1,14 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Alternate Reality/Scenes/SceneMain.unity
+    guid: 65b8479c16aa05b4283de50d4867ce03
+  - enabled: 1
+    path: Assets/Alternate Reality/Scenes/SceneGame.unity
+    guid: 62ac1ab3cb0bb464685e258d8cd86545
+  m_configObjects: {}
