@@ -1,0 +1,17 @@
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+
+public static class Extensions
+{
+    /// https://stackoverflow.com/a/3527717 ///
+    public static IEnumerable<FileInfo> GetFilesByExtensions(this DirectoryInfo dir, params string[] extensions)
+    {
+        if (extensions == null)
+            throw new ArgumentNullException("extensions");
+
+        IEnumerable<FileInfo> files = dir.EnumerateFiles();
+        return files.Where(f => extensions.Contains(f.Extension) && f.Length / 1024 < 400);
+    }
+}
